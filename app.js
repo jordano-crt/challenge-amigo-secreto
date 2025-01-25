@@ -15,6 +15,5 @@ function agregarAmigo(nombre){
         amigosInsertados.push(valor);// agrego el valor al array
         console.log(amigosInsertados);
         document.getElementById('amigo').value = "";// limpio el input
-    }
-    
+    } 
 }
