@@ -23,7 +23,7 @@ function agregarAmigo(nombre){
 
 function agregarLista(lista) {
     let listaAmigos = document.getElementById('listaAmigos');
-    listaAmigos.innerHTML = "";
+    listaAmigos.innerHTML = "";// elimino los elementos del html
     for (let i = 0; i < lista.length; i++) {
         listaAmigos.innerHTML += `<li>${lista[i]}</li>`;// concatenación de la lista
     }
@@ -34,9 +34,9 @@ function agregarLista(lista) {
 function sortearAmigo() {
     let numeroAleatorio = 0;
     if (amigosInsertados.length != 0){
-        numeroAleatorio = Math.floor(Math.random()* amigosInsertados.length);
+        numeroAleatorio = Math.floor(Math.random()* amigosInsertados.length);// genera numero aleatorio, en base a el largo de la lista
         let resultado = document.getElementById('resultado')
-        resultado.innerHTML = `<li>${amigosInsertados[numeroAleatorio]}</li>`;
+        resultado.innerHTML = `<li>${amigosInsertados[numeroAleatorio]}</li>`;// crea el elemento lista con el amigo sorteado
     } else {
         alert("Debe ingresar al menos un amigo");
     }
